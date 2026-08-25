@@ -99,8 +99,8 @@ Nigeria_Rainfall_vs_Flood_1990_2026/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/Nigeria_Rainfall_vs_Flood_1990_2026.git
-cd Nigeria_Rainfall_vs_Flood_1990_2026
+git clone https://github.com/BiyiO/Nigeria-Rainfall-vs-Flood-1990_2026.git
+cd Nigeria-Rainfall-vs-Flood-1990_2026
 ```
 
 ### 2. Install Dependencies
