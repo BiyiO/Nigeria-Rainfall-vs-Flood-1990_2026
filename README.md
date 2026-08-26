@@ -11,10 +11,10 @@
 
 ## 📌 Executive Overview
 
-This repository contains the complete empirical data, machine learning attribution models, GIS spatial workflows, and peer-reviewed manuscript investigating **36 years (1990–2026)** of hydro-climatological and disaster data across all **36 Nigerian States + FCT (16,428 monthly observations)**.
+This repository contains the complete empirical data, machine learning attribution models, GIS spatial workflows, systematic literature review, and peer-reviewed manuscript investigating **36 years (1990–2026)** of hydro-climatological and disaster data across all **36 Nigerian States + FCT (16,428 monthly observations)**.
 
-### The Core Causality Question:
-> **Did upstream dam water releases (Lagdo Dam in Cameroon & Kainji/Jebba) cause more catastrophic flooding than extreme local precipitation, or did extreme precipitation dominate?**
+### The Core Research Problem:
+> **Did upstream dam water releases (Lagdo Dam in Cameroon & Kainji/Jebba on River Niger) cause more catastrophic flooding than extreme local precipitation, or did extreme precipitation dominate? How does thermodynamic warming transform this dynamic, and what spatial planning/engineering solutions resolve both hazards?**
 
 ```
                       ┌────────────────────────────────────────┐
@@ -29,12 +29,27 @@ This repository contains the complete empirical data, machine learning attributi
 │ • Driver: Dam Water Releases + Basin  │   │ • Driver: Extreme Cloudburst Downpour │
 │   Discharge (Lagdo / Kainji / Jebba)  │   │   exceeding local drainage capacity   │
 │ • Key States: Kogi, Bayelsa, Anambra, │   │ • Key States: Lagos (VI, Lekki), Kano,│
-│   Benue, Delta, Adamawa, Taraba       │   │   Port Harcourt, Ibadan               │
+│   Benue, Delta, Adamawa, Taraba       │   │   Ondo, Port Harcourt, Ibadan         │
 │ • High Farmland & Human Displacement  │   │ • High Economic & Infrastructure Loss │
 │ • Correlation: r = +0.761 (Dam Driven)│   │ • Correlation: r = +0.811 (Rain Driven│
-│ • Random Forest Weight: 68.4%         │   │ • 65%+ of Urban Economic Destruction  │
+│ • 58.4% of National Displacement      │   │ • 65%+ of Urban Economic Destruction  │
+│ • Random Forest Weight: 68.4%         │   │ • Decoupled from Dam Operations       │
 └───────────────────────────────────────┘   └───────────────────────────────────────┘
 ```
+
+---
+
+## 📚 Scientific Literature Review & Research Gaps
+
+This research bridges four critical gaps identified in existing scholarship:
+1. **Bridging Causal Conflation**: Decouples dam discharges from localized rainfall extremes via Point-Biserial, Pearson, and Random Forest models across 16,428 observations.
+2. **Bridging Longitudinal Breadth**: Expands single-event studies into a continuous 36-year panel (1990–2026).
+3. **Bridging Climatological Thermodynamics**: Integrates $+1.26^\circ\text{C}$ warming and $+9.2\%$ Clausius-Clapeyron moisture expansion models with extreme storm volatility and off-season December/January rain shifts (+62.5%).
+4. **Bridging Policy Gaps**: Replaces generic advice with a tailored **Dual Strategic Action Blueprint** (Dasin Hausa buffer dam vs. SuDS urban drainage).
+
+Detailed documentation:
+- 📖 [`03_Manuscript/01_Literature_Review_and_Gap_Analysis.md`](03_Manuscript/01_Literature_Review_and_Gap_Analysis.md)
+- 🛠️ [`03_Manuscript/02_Comprehensive_Solutions_and_Planning_Framework.md`](03_Manuscript/02_Comprehensive_Solutions_and_Planning_Framework.md)
 
 ---
 
@@ -77,7 +92,9 @@ Nigeria_Rainfall_vs_Flood_1990_2026/
 │   ├── generate_html_dashboard.py                # Standalone interactive dashboard generator
 │   └── export_dashboard_data.py                  # JSON data extraction pipeline
 ├── 03_Manuscript/
-│   └── Nigeria_Flood_Attribution_Manuscript.md   # Peer-reviewed journal manuscript
+│   ├── Nigeria_Flood_Attribution_Manuscript.md   # Peer-reviewed journal manuscript
+│   ├── 01_Literature_Review_and_Gap_Analysis.md  # Systematic literature review & research gaps
+│   └── 02_Comprehensive_Solutions_and_Planning_Framework.md # Engineering & urban planning blueprint
 ├── 04_Dashboard_Visuals/
 │   ├── Figure1_Nigeria_Executive_Rainfall_Seasonality.png
 │   ├── Figure2_Dam_Release_vs_Rainfall_Attribution.png
